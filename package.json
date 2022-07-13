@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "install": "npm install --prefix server && npm install --prefix client",
+    "install-client": "npm install --prefix client",
+    "install-server": "npm install --prefix server",
+    "install": "npm run install-client && npm run install-server",
     "watch": "npm run watch --prefix server & npm start --prefix client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
